@@ -1,0 +1,7 @@
+---
+services:
+  unc-msauth-api:
+    container_name: "Aveds-1-test-task"
+    build: .
+    ports:
+      - "${EXPOSE_PORT}:${PORT}"

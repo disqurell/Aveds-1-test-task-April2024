@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aveds-1-test-task"
+version = "0.1.0"
+description = ""
+authors = ["disqurell <lisyachenko.daniil@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+pydantic-settings = "^2.2.1"
+psycopg2-binary = "^2.9.9"
+python-jose = "^3.3.0"
+orjson = "^3.10.3"
+uvicorn = "^0.29.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
