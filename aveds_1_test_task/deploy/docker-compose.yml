@@ -1,7 +1,7 @@
 ---
 services:
-  unc-msauth-api:
+  aveds-test-task:
     container_name: "Aveds-1-test-task"
     build: .
     ports:
-      - "${EXPOSE_PORT}:${PORT}"
+      - "8090:8090"
