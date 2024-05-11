@@ -17,7 +17,19 @@ DB_HOST=""
 DB_PORT=""
 ```
 
-3. Run this commands:
+3. If production:
+   1. Update api.py file:
+   ```sh
+   ...
+   ENV: str = "prod"
+   ...
+   DEBUG: bool = False
+   ...
+   NO_DOCS: bool = True
+   ...
+   ```
+
+4. Run this commands:
 ```sh
 # Copy docker files to root dir
 cp aveds_1_test_task/deploy/docker-compose.yml ./ && cp aveds_1_test_task/deploy/Dockerfile ./
